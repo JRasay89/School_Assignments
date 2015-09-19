@@ -1,0 +1,21 @@
+let theStack = new stack
+let tokens = new Stringtokenizer
+while there are more tokens
+    let token = next tokens
+    let op = token at char 0
+    if op = +-*\ or ^
+        pop theStack store in opperand2
+        pop theStack store in opperand1
+        switch
+           case +,-,x,/ or ^
+             push operand1(operator)operand2
+    else if op = whitespace
+      continue next token
+    else if op = ~
+          change to -
+          push token in theStack
+    else
+      push token in theStack
+pop theStack store in answer
+return answer
+    

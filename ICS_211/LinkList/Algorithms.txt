@@ -1,0 +1,78 @@
+Algorithms
+
+Add(item)
+if tail is null
+   let head = new head(item,null)
+   let tail = head
+else let tail.next to a new node(item,null)
+   let tail equal tail.next
+   increment length
+
+
+Add(item, position)
+if position < 1 or position > length +1
+  throw exception
+let temp = head
+insertItem = new node(item,null)
+if position = 1
+   let insertitem.next = head
+   let head = insertItem
+   if tail = null
+      let tail = head
+      let temp = head
+loop position - 2
+let insertItem.next = temp.next
+let temp.next = insertItem
+if (position = length + 1)
+  let tail.next = insertItem
+  let tail = insertItem
+
+
+
+remove(item)
+call contain method and store in pos
+if pos = 0
+  throw exception
+loop while pos > 0 and pos < null
+    call contain method store in pos
+    call remove method
+
+
+remove(position)
+if position < 1 or position > length
+  throw an exception
+store head in temp
+loop position -2 times
+    store temp.next in temp
+store temp.next.next in temp.next
+if position = length store temp in tail
+decrement length
+
+
+retrieve(position)
+if position < 1 or position > length
+   throw an exception
+store head in temp
+loop while temp != position
+    temp = temp.next
+return temp.data
+
+
+int length()
+return length
+
+
+contains(item)
+store head in temp
+loop while temp != null
+    loop while temp.data != item
+         store temp in temp.next
+    if temp.data = item
+        return temp
+    return 0
+
+isEmpty()
+if head = null
+  return true
+else
+  return false

@@ -1,0 +1,36 @@
+Create a new stack of Strings called theStack
+Create new stringtokenizer called tokens
+creat an empty string called post
+store 0 in opercount
+store 0 in opercount2
+loop while tokens has more tokens
+   store next tokens in token
+   store char at 0 of token in op
+   if op = operator
+      increment opercount
+      push in theStack
+      push string "off" in theStack
+   else if op = operand
+      increment opercount2
+      if the stack is empty
+         throw exception "invalid expression"
+      else
+         put the operand in the string post
+      while theStack is not empty and top of theStack is the string "on"
+         pop "On" from theStack
+         pop theStack store in operator
+         put operator in the string post
+      if theStack is not empty
+          pop theStack
+          push the string "on" in theStack
+   else
+      throw exception "invalid operator"
+if opercount  >= opercount2
+  throw exception "Invalid expression"
+loop while theStack is not empty
+   if the top of theStack is the string "on" or "off"
+      pop theStack
+   else
+      pop theStack and store in operator
+      put the operator in the string post
+return post

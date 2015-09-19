@@ -1,0 +1,41 @@
+let theStack = new stack
+create an empty string post
+read the infix expression
+loop while
+   if opperrator is - or +
+      if the stack is empty
+         push opperrator into the stack
+      else if top of stack is * or / or ^
+          loop while the stack is not empty and the top of stack is not (
+             pop the stack store in opperrator
+             store the opperrator in the post string
+          push the opperator in the stack
+    else if opperrator is * or /
+      if the stack is empty
+         push opperrator into the stack
+      else if the top of the stack is * or / or ^
+          loop while the stack is not empty and the top of stack is not (
+             pop the stack and store in opperrator
+             store the opperrator in the post string
+          push the opperrator in the stack
+    else if opperrator is ^
+       push the opperrator in the stack
+    else if ' '
+       skip
+    else if '('
+       push '(' into the stack
+    else if ')'
+        loop while the top of stack is not equal to '('
+           pop the stack store in opperrator
+           store the opperrator in post string
+        pop '(' out of the stack
+    else if opperrand
+        store the opperand in the postring  
+    else
+       throw an InFixException
+loop while the stack is not empty
+  pop the remaining opperrator from the stack
+  store the opperrator in the post string
+return post
+         
+         
