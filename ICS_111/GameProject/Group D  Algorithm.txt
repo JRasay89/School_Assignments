@@ -1,0 +1,20 @@
+Display "Let's play a game. I will think of a number between 1-100 
+         and you have 7 chances to guess correctly."
+Store a random number between 1 and 100 in number
+Display "What is your first guess?"
+accept guess
+Store 6 in totalGuesses
+loop while guess not equal to number and totalGuesses not equal to 0
+   if guess < number
+      Display "You need to guess higher. You have ", totalGuesses, " guesses left."
+   else
+      display "You need to guess lower. You have ", totalGuesses, " guesses left."
+   if totalGuesses = 1
+      display "This is your last guess"
+   display "What is your next guess."
+   accept guess
+   Store totalGuesses-1 in totalGuesses
+if guess = number
+   display "You are correct."
+else
+   display "You are out of guesses. My number was ", number

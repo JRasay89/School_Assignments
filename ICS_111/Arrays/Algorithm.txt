@@ -1,0 +1,19 @@
+Algorithm
+display "Enter the size of the array being created”
+store the size in n
+while n < 1
+          display “You cannot make an array of that size. Try again”
+          accept n
+create a new array of int with n cells, store in a
+loop for i going from 0 to  a.length 
+      store random numbers between 1 - 1000 in a[i]
+ store y in answer
+loop for I going from 0 to a.length -1
+     loop while answer equals yes
+          Display “Enter a number to be search”
+          Store number in search
+           If a[i] equals search
+                 Display “That number is in cell,” i
+                 Display “Would you like to search another number?”
+            else
+                  Display “That number is not in any cell. Try again?                      
