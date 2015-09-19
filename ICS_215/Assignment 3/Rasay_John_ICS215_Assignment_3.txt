@@ -1,0 +1,45 @@
+*********PROBLEM 1*********
+1)
+
+A: INCORRECT
+B: CORRECT
+C: INCORRECT
+
+
+2)
+
+A: INCORRECT
+B: INCORRECT
+C: CORRECT
+
+
+*********PROBLEM 2*********
+REGEX:
+/^[+]?\d?[\s]?[(]?(\d{3})[)]?[\s\-]?(\d{3})[\s\-]?(\d{2})[\s]?(\d{2})$/
+
+FORMATTING THE PHONE NUMBER:
+s/^[+]?\d?[\s]?[(]?(\d{3})[)]?[\s\-]?(\d{3})[\s\-]?(\d{2})[\s]?(\d{2})$/($1) $2-$3$4/
+
+
+This regex works for the 6 given phone number formats
+1-> 8081234567
+2-> 808-123-4567
+3-> 808 123 4567
+4-> (808) 123 45 67
+5-> +18081234567
+6-> +1 808 123 4567
+
+
+
+*********PROBLEM 3*********
+my $spaces = qr/[\t\s]*/;
+my $regVar = qr/^(\$|\@){1}[A-Za-z_][A-Za-z0-9_]*$/;
+my $regSub = qr/^[A-Za-z_][A-Za-z0-9_]*([(].*[)])?[;]$/;
+my $reg_access_array = qr/^(\$){1}[A-Za-z_][A-Za-z0-9_]*([[]((\${1}[A-Za-z]*)|\d*)[]])$/;
+my $reg_quoted_strings = qr/((["]{1}[A-Za-z0-9_\s\t]*["]{1})|([']{1}[A-Za-z0-9_\s\t]*[']{1}))/;
+my $reg_nonquoted_strings = qr/[A-Za-z0-9_\s\t]*/;
+my $reg_comparrisson = qr/^((\${1}[A-Za-z_][A-Za-z0-9_]*([[]((\${1}[A-Za-z]*)|\d*)[]])?)|[0-9]*)?[\s\t]*(([=]{2})|[<]|[>]|([>][=])|([<][=])){1}[\s\t]*((\${1}[A-Za-z_][A-Za-z0-9_]*([[]((\${1}[A-Za-z]*)|\d*)[]])?)|[0-9]*)+$/;
+my $reg_assignments = qr/^(\${1}[A-Za-z_][A-Za-z0-9_]*([[]((\${1}[A-Za-z]*)|\d*)[]])?)[\s\t]*[=]{1}[\s\t]*((\${1}[A-Za-z_][A-Za-z0-9_]*([[]((\${1}[A-Za-z]*)|\d*)[]])?)|[0-9]*|((["]{1}[A-Za-z0-9_\s\t]*["]{1})|([']{1}[A-Za-z0-9_\s\t]*[']{1})))$/;
+
+
+my $regex = qr/$spaces|$regVar|$regSub|$reg_access_array|$reg_quoted_strings|$reg_nonquoted_strings|$reg_comparrisson|$reg_assignments/;

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Aggregates</title>
+
+<script type="text/javascript">
+
+var numbers = new Array();
+
+function insert(input) 
+{
+var newNumber = input.value;
+input.value = "";
+numbers[numbers.length] = newNumber;
+}
+
+function show() 
+{
+var string="";
+for(i = 0; i < numbers.length; i++)
+string = string + numbers[i]+"\n";
+document.getElementById("e").value = string;
+}
+
+function sum()
+{ 
+if (numbers.length == 0) return 0;
+for (var i=0,total=0; i < numbers.length; i++) 
+total += parseInt(numbers[i]);
+document.getElementById("Sum").value = total;
+return total;
+}
+
+function mean()
+{
+var m = numbers.length == 0 ? 0 : sum()/numbers.length;
+document.getElementById("Mean").value = m;
+return m;
+}
+
+function resetNumbers()
+{
+numbers = new Array();
+}
+
+</script>
+
+</head>
+
+
+<body>
+<h1>Aggregates</h1>
+<h3>Add as many numbers as you like </br> to the list, then click Calculate.</h3>
+<form id="formtext" form name="formtext">
+<input type="text" name="name" value=""></input>
+<input type="button" value="Add to list" onClick="insert(document.formtext.name);show();"></input></br>
+
+<textarea name="txt" id="e" rows="10" ></textarea> </br>
+<input type="button" value="Calculate" onClick="sum();mean()"></input> 
+<input type="button" value="Reset" onClick="resetNumbers();form.reset()"></input>
+
+<h4>Total (Sum)/h4>
+<input type="text" id="Sum" value="0"></input></br>
+
+<h4>Average/h4>
+<input type="text" id="Mean" value="0"></input></br>
+
+
+</form>
+</body>
+
+</html>

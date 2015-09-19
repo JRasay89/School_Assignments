@@ -1,0 +1,36 @@
+John Rasay
+ICS 215
+
+
+1)
+Commands:
+
+cd - This is to change your directory
+
+ls - this is to list directory contents.
+
+pwd - This is to print the name of your current/working directory.
+
+rm - This is to remove files or directories.
+
+mv - This is to move (rename) files.
+
+touch - This is use to change the file timestamps.
+
+echo - This is use to display a line of text.
+
+whoami - This is use to print effective userid.
+
+
+
+2) To save the output of a command to a text file you use >>
+
+example:
+ls >> example.txt
+
+pwd >> example.txt
+
+
+To save the output of a command to a text file without appending use >
+example:
+ls > example.txt
