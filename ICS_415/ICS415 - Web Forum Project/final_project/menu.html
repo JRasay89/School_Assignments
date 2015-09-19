@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Forum Menu</title>
+		<link rel="stylesheet" type="text/css" href="css/menu-style.css">
+		<!-- Bootstrap -->
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/bootstrap-theme.min.css" rel="stylesheet">
+		
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="https://code.jquery.com/jquery.js"></script>
+		<!-- Include all compiled plugins (below), or include individual files as needed -->
+		<script src="js/bootstrap.min.js"></script>
+		<script src='js/checkuser.js'></script>
+	</head>
+	<body>
+		<div class="container">
+			<div class="header">
+				<ul class="nav nav-pills pull-right">
+					<li class="active">
+						<a href="#">Home</a>
+					</li>
+					<li>
+						<a href="about.html">About</a>
+					</li>
+					<li>
+						<a href="#" onClick="logout()" id="logout_link">Logout</a>
+					</li>
+				</ul>
+				<h3 class="text-muted" id="welcome_message"></h3>
+			</div>
+			<div class="jumbotron">
+				<h1 id="title">ICS 415 FORUM</h1>
+			</div>
+			<div class="row marketing">
+				<div class="col-md-4">
+					<h4><a href="games.html"><img class="img-responsive img-circle" src="images/controller.png">Games</a></h4>
+					<p>Discuss Games Here</p>
+				</div>
+				<div class="col-md-4">
+					<h4><a href="hardware.html"><img class="img-responsive img-circle" src="images/hardware.png">Hardware</a></h4>
+					<p>Discuss Technology Here</p>
+				</div>
+				<div class="col-md-4">
+					<h4><a href="movies.html"><img class="img-responsive img-circle" src="images/movies.png">Movies</a></h4>
+					<p>Discuss Movies Here</p>
+				</div>
+				<div class="col-md-4">
+					<h4><a href="music.html"><img class="img-responsive img-circle" src="images/music.png">Music</a></h4>
+					<p>Discuss Music Here</p>
+				</div>
+				<div class="col-md-4">
+					<h4><a href="comics.html"><img class="img-responsive img-circle" src="images/comics.png">Comics</a></h4>
+					<p>Discuss Comics Here</p>
+				</div>
+				<div class="col-md-4">
+					<h4><a href="other.html"><img class="img-responsive img-circle" src="images/other.png">Other</a></h4>
+					<p>Discuss other things Here</p>
+				</div>
+			</div>
+			<div class="footer">
+				<p>© ICS 415 </p>
+			</div>
+		</div>
+		<!-- /container-->
+
+	</body>
+</html>

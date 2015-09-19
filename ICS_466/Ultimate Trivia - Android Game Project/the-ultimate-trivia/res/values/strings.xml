@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">The Ultimate Trivia</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world, main!</string>
+    <string name="single_player_label">Single Player</string>
+    <string name="multiplayer_label">Multiplayer</string>
+    <string name="create_label">Create</string>
+    <string name="main_title">The Ultimate Trivia</string>
+    <color name="red_color">#FF0000</color>
+    <string name="play_label">Play</string>
+    <string name="single_player_title">Single Player</string>
+    <string name="exit_label">Exit</string>
+    <string name="time_trial_label">Time Trial</string>
+    <string name="survival_label">Survival</string>
+    <plurals name="question_reading_parse_fail_number"></plurals>
+    <string name="answer_correct">Correct!</string>
+    <string name="answer_incorrect">Wrong!</string>
+    <string name="end_quiz_label">Return to Main Menu</string>
+    <string name="finish_label">Finished!</string>
+    <string name="leaderboard_label">Leaderboard</string>
+
+</resources>

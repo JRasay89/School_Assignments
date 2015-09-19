@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Register</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" type="text/css" href="css/menu-style.css">
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
+
+		<!-- jquery -->
+		<script src="https://code.jquery.com/jquery.js"></script>
+		<!--bootrap javascript-->
+		<script src="js/bootstrap.min.js"></script>
+		<!-- homepage's login javascript -->
+		<script src="js/register.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<div class="header">
+				<ul class="nav nav-pills pull-right">
+					<li class="active">
+						<a href="home.html">Home</a>
+					</li>
+				</ul>
+			</div>
+			<div class="jumbotron">
+				<h1>ICS 415 FORUM</h1>
+			</div>
+			<div class="row" id="register">
+				<div class="col-md-6 col-md-offset-3">
+					<h2>Register for The Forum</h2>
+				</div>
+				<div class="col-md-6 col-md-offset-3" id="form_div">
+					<form role="form" class="form-group">
+						<div class="form-group">
+							<label for="username" class="col-sm-3 control-label">Username(to login):</label>
+							<div class="col-sm-9">
+								<input type="text" class="form-control" id="username">
+							</div>
+							<span class="col-sm-9 col-sm-offset-3 help-block">numbers, letters, underscore, no symbols - minimum 5 characters - case-sensitive</span>
+							<p class="col-sm-9 col-sm-offset-3 errors" id="user_error"></p>
+						</div>
+						
+						<div class="form-group">
+							<label for="password" class="col-sm-3 control-label">Password:</label>
+							<div class="col-sm-9">
+								<input type="password" class="form-control" id="password">
+							</div>
+						</div>
+						<span class="col-sm-9 col-sm-offset-3 help-block">at least 1 digit, 1 lower case, 1 uppercase, no symbols - minimum 8 characters - case-sensitive</span>
+						<div class="form-group">
+							<label for="password_confirm" class="col-sm-3 control-label">Confirm Password:</label>
+							<div class="col-sm-9">
+								<input type="password" class="form-control" id="password_confirm">
+							</div>
+							<p class="col-sm-9 col-sm-offset-3 errors" id="match_error"></p>
+							<p class="col-sm-9 col-sm-offset-3 errors" id="pass_error"></p>
+						</div>
+						<div class="form-group">
+							<label for="name" class="col-sm-3 control-label">Name:</label>
+							<div class="col-sm-9">
+								<input type="text" class="form-control" id="name">
+							</div>
+							<p class="col-sm-9 col-sm-offset-3 errors" id="name_error"></p>
+						</div>
+						<div class="form-group">
+							<label for="email" class="col-sm-3 control-label">Email:</label>
+							<div class="col-sm-9">
+								<input type="email" class="form-control" id="email">
+							</div>
+							<p class="col-sm-9 col-sm-offset-3 errors" id="email_error"></p>
+						</div>
+						<div class="form-group">
+							<div class="col-sm-offset-3 col-sm-9">
+								<button type="button" class="btn btn-primary" id="registerButton" onClick="validate()">Submit</button>
+								<button type="button" class="btn btn-default" id="registerButton" onClick="location.href='home.html';">Cancel</button>
+							</div>
+						</div>
+					</form>
+				</div>
+				<div id="finished">
+					<div class="col-sm-6 col-sm-offset-3">
+						<p>
+							Thank you for registering.
+							Click here to log in.
+						</p>
+						<button type="button" class="btn btn-success" id="loginbutton" onClick="location.href='home.html';">Log in</button>
+					</div>
+				</div>
+			</div>
+			<div class="footer">
+				<p>© ICS 415 </p>
+			</div>
+		</div>
+	</body>
+</html>

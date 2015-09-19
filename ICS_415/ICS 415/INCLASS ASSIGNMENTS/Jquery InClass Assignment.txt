@@ -1,0 +1,44 @@
+EXERCISE 1
+function toggleParagraph() {
+    if ($("button").text()=="Hide") {
+        $("#demo").toggle();
+        $("button").text('Show');
+    }
+    else {
+        $("button").text('Hide');
+        $("#demo").toggle(); 
+    }
+}
+  
+EXERCISE 2
+$("#div1").mouseover(function(){
+  $("#div1").css("background-color","purple");
+});
+$("#div1").mouseout(function(){
+  $("#div1").css("background-color","green");
+});
+
+$("#div2").mouseover(function(){
+  $("#div2").css("background-color","purple");
+});
+$("#div2").mouseout(function(){
+  $("#div2").css("background-color","blue");
+});
+
+
+EXERCISE 3 *MUST INSTAL JQUERY UI*
+$("#stop").click(function(){
+    $("#div1").stop();
+});
+
+$( "#start" ).click(function() {
+    $("#div1").animate({
+        left:'100px',
+        width: '75px',
+        height: '75px'
+    },2500);
+    $("#div1").animate({
+        top: '100px',
+        backgroundColor: "blue"
+    },2500);  
+});

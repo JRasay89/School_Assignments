@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Forum Menu</title>
+		<link rel="stylesheet" type="text/css" href="css/menu-style.css">
+		<!-- Bootstrap -->
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/bootstrap-theme.min.css" rel="stylesheet">
+		<!--Message Box css-->
+		<link href="css/msgBoxLight.css" rel="stylesheet">			
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="https://code.jquery.com/jquery.js"></script>
+		<!-- Include all compiled plugins (below), or include individual files as needed -->
+		<script src="js/bootstrap.min.js"></script>
+		<!--Custom Javascript -->
+		<script src="js/topics.js"></script>
+		<script src='js/checkuser.js'></script>
+		<!--Javascript Message Box plugin-->
+		<script src='js/jquery.msgBox.js'></script>
+		
+	</head>
+	<body>
+		<div class="container">
+			<div class="header">
+				<ul class="nav nav-pills pull-right">
+					<li class="active">
+						<a href="menu.html">Home</a>
+					</li>
+					<li>
+						<a href="about.html">About</a>
+					</li>
+					<li>
+						<a href="#" onClick="logout()" id="logout_link">Logout</a>
+					</li>
+				</ul>
+				<h3 class="text-muted" id="welcome_message"></h3>
+			</div>
+			<div class="jumbotron">
+				<h1 id="title">Movies</h1>
+			</div>
+			<!--/jumbotron-->
+			<div class="row marketing" id="row_topic">
+				<!--Button for creating new topics and also button for backing to previous view or page-->
+				<p class="col-md-9">
+					<a class="btn btn-xs btn-primary" id="back_btn" href="menu.html" role="button">Back</a>
+					<button type="button" class="btn btn-xs btn-primary" id="btn_topic"><span class="glyphicon glyphicon-pencil"></span> New Topic</button>
+				</p>
+				<!--Form for creating new topics-->
+				<form role="form" class="form-group" id="form_topic">
+					<div class="col-md-9">
+							<h4 id="form_title">Create New Topic</h4>
+					</div>
+					<div class="form-group" id="inputTitle_div">
+						<div class="col-md-9">
+							<label for="inputTitle" class="control-label">Enter Title(Max 40 char):</label>
+							<div class="row">
+								<div class="col-md-9">
+									<input type="text" class="form-control" id="inputTitle" name="title" placeholder="Subject" maxlength="40">
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="form-group">
+						<div class="col-md-9">
+							<label for="inputMessage" class="control-label">Enter Message:</label>
+							<div class="row">
+								<div class="col-md-9">
+									<textarea class="form-control" id="inputMessage" name="message" placeholder="Message" maxlength="50"></textarea>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="form-group" id="form_btns">
+						<div class="col-md-9">
+							<button type="button" class="btn btn-primary" id="btn_form_create">Create</button>
+							<button type="button" class="btn btn-default" id="btn_form_cancel">Cancel</button>
+						</div>
+					</div>
+				</form>
+				<!--/form-->
+			</div>
+			<!--/row_topic-->
+			<div class="panel panel-primary">
+			<div class="panel-heading" id="table_title"></div>
+				<table class="table table-bordered">
+				</table>
+			</div>
+			<div class="footer">
+				<p>© ICS 415 </p>
+			</div>
+			<!--/footer-->
+		</div>
+		<!-- /container-->
+
+	</body
+</html>

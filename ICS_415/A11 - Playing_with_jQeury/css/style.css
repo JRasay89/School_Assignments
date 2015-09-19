@@ -1,0 +1,16 @@
+div {
+    background:CornflowerBlue;
+    margin:100px;
+    border:1px solid;
+}
+dt {
+    color: blue;
+    font-weight: bold;
+    margin: 20px 10px 10px 5px;
+    padding: 0 0 0 20px;
+    line-height: 25px;
+	cursor: pointer;
+}
+h1 {
+	text-align: center;
+}
