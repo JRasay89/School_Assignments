@@ -1,0 +1,3 @@
+http://www.ietf.org/rfc/rfc2396.txt
+ftp://www.example.com/example.jpg
+https://www.hawaii.edu/welcome.html?id=2&t=0

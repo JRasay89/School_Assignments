@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	  <link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/themes/smoothness/jquery-ui.css" />
+	  <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+	  <script src="file.js"></script>
+	  <script src="circle.js"></script>
+	  <script src="circle_editor.js"></script>
+	  <link rel="stylesheet" href="circle_editor.css" />
+	</head>
+
+	<body>
+		<h1>Circle Editor Web App</h1>
+	    <ul id="menubar">
+	      <li id="file_menu" class="menu"><a href="#">File</a>
+	    	  <ul>
+        		<li><a id="open" href="#" title="Opens a file where you saved your circles before."><span class="ui-icon-video"> </span>Open...</a></li>
+        		<li><a id="save" href="#" title="Saves the current circles to a file in your download folder."><span class="ui-icon-disk"> </span>Save As...</a></li>
+    		  </ul>
+    	  </li>
+	      <li id="edit_menu" class="menu"><a href="#">Edit</a>
+	    	  <ul>
+		        <li><a id="change" href="#" title="Changes the selected circle."><span class="ui-icon-disk"> </span>Change</a></li>    
+		        <li><a id="create" href="#" title="Creates new circle."><span class="ui-icon-video"> </span>New</a></li>
+		        <li><a id="copy" href="#" title="Remembers the selected circle in the clipboard."><span class="ui-icon-video"> </span>Copy</a></li>
+		        <li><a id="cut" href="#" title="Deletes the selected circle from the canvas and remembers it in the clipboard."><span class="ui-icon-disk"> </span>Cut</a></li>
+		        <li><a id="paste" href="#" title="Pastes the circle in clipboard to the canvas."><span class="ui-icon-disk"> </span>Paste</a></li>
+	    	  </ul>
+	      </li>
+	    </ul>
+	    <canvas id="canvas" width="800" height="400"> </canvas>
+	    <div id="dialog" title="How should your circle look like?">
+	      <div class="fieldset">
+	        <label for="x">Center x:</label>
+	        <input type="text" id="x" class="text ui-widget-content ui-corner-all">
+	        <label for="y">Center y:</label>
+	        <input type="text" id="y" class="text ui-widget-content ui-corner-all">
+	        <label for="radius">Radius:</label>
+	        <input type="text" id="radius" class="text ui-widget-content ui-corner-all">
+	        <label for="color">Fill Color:</label>
+	        <input type="text" id="color" class="text ui-widget-content ui-corner-all">
+	        <label for="stroke">Stroke Color:</label>
+	        <input type="text" id="stroke" class="text ui-widget-content ui-corner-all">
+	      </div>
+	    </div>
+	    <div id="dialog2" title="Where would you like to paste?">
+	    	<div class="fieldset">
+		    	<label for="x">Center x:</label>
+		        <input type="text" id="x" class="text ui-widget-content ui-corner-all">
+		        <label for="y">Center y:</label>
+		        <input type="text" id="y" class="text ui-widget-content ui-corner-all">
+		    </div>
+	    </div>
+	</body>
+</html>

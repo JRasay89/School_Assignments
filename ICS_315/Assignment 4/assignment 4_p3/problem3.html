@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Assignment 4 Problem 3</title>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script type="text/javascript" src="videopl.js"></script>
+	</head>
+	<body>
+		<div>
+			<h3>Enter a video link to be played.</h3>
+			<h3>Supports mp4, ogg, and webm format.</h3>
+			<h3>Example URL videos: </h3>
+			<p>-http://techslides.com/demos/sample-videos/small.mp4</p>
+			<p>-http://techslides.com/demos/sample-videos/small.webm</p>
+			<p>-http://techslides.com/demos/sample-videos/small.ogv</p>			
+			Video URL: <input id="url" type="text">
+			<button type="button" id="enter">Enter</button>
+		</div>
+		<div id="divVideo">
+			<video id="vidPlayer" width="640" height="365">
+				<source id="oggVid" src="" type="video/ogg">
+				<source id="mpVid" src="" type="video/mp4">
+				<source id="webmVid" src="" type="video/webm">
+				<p>
+					Your browser does not support the <code>video</code> element.
+				</p>
+			</video>
+		</div>
+
+	</body>
+</html>

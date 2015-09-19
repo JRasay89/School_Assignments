@@ -1,0 +1,8 @@
+.quiz {
+  display: inline-block;
+  border: solid 1px aqua;
+  margin-bottom: 10px;
+}
+.quiz p {
+  margin-left: 10px;
+}
