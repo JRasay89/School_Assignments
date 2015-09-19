@@ -1,0 +1,237 @@
+1 ?- go3.
+
+The order of balls from left to right is: 
+A is green
+B is red
+C is black
+D is green
+E is red
+F is white
+G is white
+H is green
+true ;
+
+The order of balls from left to right is: 
+A is green
+B is red
+C is black
+D is green
+E is red
+F is white
+G is white
+H is green
+true ;
+
+The order of balls from left to right is: 
+A is green
+B is red
+C is black
+D is green
+E is red
+F is white
+G is white
+H is green
+true ;
+
+The order of balls from left to right is: 
+A is green
+B is red
+C is black
+D is green
+E is red
+F is white
+G is white
+H is green
+true ;
+
+The order of balls from left to right is: 
+A is green
+B is red
+C is white
+D is green
+E is red
+F is black
+G is white
+H is green
+true ;
+
+The order of balls from left to right is: 
+A is green
+B is red
+C is white
+D is green
+E is red
+F is white
+G is black
+H is green
+true ;
+
+The order of balls from left to right is: 
+A is green
+B is red
+C is white
+D is green
+E is red
+F is black
+G is white
+H is green
+true ;
+
+The order of balls from left to right is: 
+A is green
+B is red
+C is white
+D is green
+E is red
+F is white
+G is black
+H is green
+true ;
+
+The order of balls from left to right is: 
+A is green
+B is red
+C is white
+D is green
+E is red
+F is black
+G is white
+H is green
+true ;
+
+The order of balls from left to right is: 
+A is green
+B is red
+C is white
+D is green
+E is red
+F is white
+G is black
+H is green
+true ;
+
+The order of balls from left to right is: 
+A is green
+B is red
+C is white
+D is green
+E is red
+F is black
+G is white
+H is green
+true 
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.There are 72 Solutions
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+The order of balls from left to right is: 
+A is green
+B is red
+C is white
+D is green
+E is red
+F is black
+G is white
+H is green
+true ;
+
+The order of balls from left to right is: 
+A is green
+B is red
+C is white
+D is green
+E is red
+F is white
+G is black
+H is green
+true ;
+
+The order of balls from left to right is: 
+A is green
+B is red
+C is white
+D is green
+E is red
+F is black
+G is white
+H is green
+true ;
+
+The order of balls from left to right is: 
+A is green
+B is red
+C is white
+D is green
+E is red
+F is white
+G is black
+H is green
+true ;
+
+The order of balls from left to right is: 
+A is green
+B is red
+C is white
+D is green
+E is red
+F is black
+G is white
+H is green
+true ;
+
+The order of balls from left to right is: 
+A is green
+B is red
+C is white
+D is green
+E is red
+F is white
+G is black
+H is green
+true ;
+
+The order of balls from left to right is: 
+A is green
+B is red
+C is white
+D is green
+E is red
+F is black
+G is white
+H is green
+true ;
+
+The order of balls from left to right is: 
+A is green
+B is red
+C is white
+D is green
+E is red
+F is white
+G is black
+H is green
+true ;
+false.
+
+2 ?-

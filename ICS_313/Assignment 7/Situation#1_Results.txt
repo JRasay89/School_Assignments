@@ -1,0 +1,256 @@
+Please visit http://www.swi-prolog.org for details.
+
+For help, use ?- help(Topic). or ?- apropos(Word).
+
+1 ?- go1.
+
+The order of balls from left to right is: 
+A is green
+B is green
+C is blue
+D is blue
+E is yellow
+true ;
+
+The order of balls from left to right is: 
+A is green
+B is green
+C is blue
+D is blue
+E is yellow
+true ;
+
+The order of balls from left to right is: 
+A is green
+B is green
+C is yellow
+D is blue
+E is blue
+true ;
+
+The order of balls from left to right is: 
+A is green
+B is green
+C is yellow
+D is blue
+E is blue
+true ;
+
+The order of balls from left to right is: 
+A is green
+B is green
+C is blue
+D is blue
+E is yellow
+true ;
+
+The order of balls from left to right is: 
+A is green
+B is green
+C is blue
+D is blue
+E is yellow
+true ;
+
+The order of balls from left to right is: 
+A is green
+B is green
+C is yellow
+D is blue
+E is blue
+true ;
+
+The order of balls from left to right is: 
+A is green
+B is green
+C is blue
+D is blue
+E is yellow
+true ;
+
+The order of balls from left to right is: 
+A is green
+B is green
+C is blue
+D is blue
+E is yellow
+true ;
+
+The order of balls from left to right is: 
+A is green
+B is green
+C is yellow
+D is blue
+E is blue
+true ;
+
+The order of balls from left to right is: 
+A is green
+B is green
+C is yellow
+D is blue
+E is blue
+true ;
+
+The order of balls from left to right is: 
+A is green
+B is green
+C is blue
+D is blue
+E is yellow
+true ;
+
+The order of balls from left to right is: 
+A is green
+B is green
+C is blue
+D is blue
+E is yellow
+true ;
+
+The order of balls from left to right is: 
+A is green
+B is green
+C is yellow
+D is blue
+E is blue
+true ;
+
+The order of balls from left to right is: 
+A is green
+B is green
+C is yellow
+D is blue
+E is blue
+true ;
+
+The order of balls from left to right is: 
+A is blue
+B is blue
+C is green
+D is green
+E is yellow
+true ;
+
+The order of balls from left to right is: 
+A is blue
+B is blue
+C is green
+D is green
+E is yellow
+true ;
+
+The order of balls from left to right is: 
+A is blue
+B is blue
+C is yellow
+D is green
+E is green
+true ;
+
+The order of balls from left to right is: 
+A is blue
+B is blue
+C is yellow
+D is green
+E is green
+true ;
+
+The order of balls from left to right is: 
+A is blue
+B is blue
+C is green
+D is green
+E is yellow
+true ;
+
+The order of balls from left to right is: 
+A is blue
+B is blue
+C is green
+D is green
+E is yellow
+true ;
+
+The order of balls from left to right is: 
+A is blue
+B is blue
+C is yellow
+D is green
+E is green
+true ;
+
+The order of balls from left to right is: 
+A is blue
+B is blue
+C is yellow
+D is green
+E is green
+true ;
+
+The order of balls from left to right is: 
+A is yellow
+B is green
+C is green
+D is blue
+E is blue
+true ;
+
+The order of balls from left to right is: 
+A is yellow
+B is green
+C is green
+D is blue
+E is blue
+true ;
+
+The order of balls from left to right is: 
+A is yellow
+B is green
+C is green
+D is blue
+E is blue
+true ;
+
+The order of balls from left to right is: 
+A is yellow
+B is green
+C is green
+D is blue
+E is blue
+true ;
+
+The order of balls from left to right is: 
+A is yellow
+B is blue
+C is blue
+D is green
+E is green
+true ;
+
+The order of balls from left to right is: 
+A is yellow
+B is blue
+C is blue
+D is green
+E is green
+true ;
+
+The order of balls from left to right is: 
+A is yellow
+B is blue
+C is blue
+D is green
+E is green
+true ;
+
+The order of balls from left to right is: 
+A is yellow
+B is blue
+C is blue
+D is green
+E is green
+true ;
+false.
+
+There are 24 Solutions.

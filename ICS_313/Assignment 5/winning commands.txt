@@ -1,0 +1,17 @@
+
+walk west
+pickup herbs
+walk east
+pickup wand
+walk east
+walk south
+pickup knife
+pickup vial
+cook herbs cauldron
+stir wand cauldron
+take-potion vial cauldron
+walk north
+walk west
+walk upstairs
+say-spell vial spellbook
+pour vial knife

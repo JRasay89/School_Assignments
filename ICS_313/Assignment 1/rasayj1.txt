@@ -1,0 +1,30 @@
+Question 1
+
+1.1
+Why are there 2 file transfer modes provided by ftp/sftp?
+
+Answer: 
+There are 2 file transfer modes provided by ftp/sftp
+because some file types will not support binary and some will not support ascii 
+such as images in jpg will not work well in ascii mode
+so it is there to support different file types.
+
+1.2
+How do you select the correct mode for each file type?
+
+Answer: 
+Most clients have auto mode which will try to determine the correct mode for each file type
+but to manually select the mode just type in ascii or type in binary when in ftp mode.
+
+
+
+1.3
+What happens if a file in transferred in the wrong mode?
+
+Answer: 
+if a file is transferred in the wrong mode it will not work properly or end up being corrupted.
+
+
+
+Sources
+http://www.rhinosoft.com/newsletter/NewsL2008-03-18.asp

@@ -1,0 +1,127 @@
+
+* (load "rasayj3A.lisp")
+
+
+
+T
+
+* (id 313 3)
+
+Name: JOHN RASAY
+
+Course: ICS313
+
+Assignment # 3
+
+NIL
+
+* (gc_d "foo" 1)
+
+Please enter two integer numbers
+
+NIL
+
+* (gc_d -1 1)
+
+Please enter two non-negative number
+
+NIL
+
+* (gc_d 1 -1)
+
+Please enter two non-negative number
+
+NIL
+
+* (gc_d 100 32)
+
+
+4
+
+* (gc_d 50 60)
+
+10
+
+* (gc_d2 "foo" 1)
+
+Please enter two integer numbers
+
+NIL
+
+* (gc_d2 -2 1)
+
+Please enter two non-negative number
+
+NIL
+
+* (gc_d2 2 -1)
+
+Please enter two non-negative number
+
+NIL
+
+* (gc_d2 100 32)
+
+Answer: 4
+
+NIL
+
+* (gc_d2 50 60)
+
+Answer: 10
+
+NIL
+
+* (factorial "foo")
+
+Please enter an integer number
+
+NIL
+
+* (factorial -2)
+
+Please enter a non-negative number
+
+NIL
+
+* (factorial 4)
+
+
+24
+
+* (factorial 6)
+
+
+720
+
+* (factorial2 "foo")
+
+Please enter an integer number
+
+NIL
+
+* (factorial2 -100)
+
+Please enter a non-negative number
+
+NIL
+
+* (factorial2 10)
+
+Answer: 3628800
+
+NIL
+
+* (factorial2 4)
+
+Answer: 24
+
+NIL
+
+* (factorial2 6)
+
+Answer: 720
+
+NIL
+
+* (dribble)

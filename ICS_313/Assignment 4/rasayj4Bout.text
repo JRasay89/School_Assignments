@@ -1,0 +1,142 @@
+					Comments
+This output goes over the interface of the guessing game
+It continues to ask the user to enter a command until user quits.
+It prints invalid command when user enters a command not in the allowed command parameter.
+It prints no solution when the parameter small has a bigger value than big because the guess my number function
+cant produce any new value.
+I think it returns "Thank you for playing." twice because of how the functions are called recursively.
+
+
+
+
+;; Dribble of #<IO TERMINAL-STREAM> started on 2012-10-05 00:02:06.
+#<OUTPUT BUFFERED FILE-STREAM CHARACTER #P"output.text">
+[2]> (load "rasayj4B.lisp")
+;; Loading file rasayj4B.lisp ...
+;; Loaded file rasayj4B.lisp
+T
+[3]> (id 313 4)
+Name: John Rasay
+Course: ICS313
+Assignment # 4
+NIL
+[4]> (guess-game)
+
+"Hello, welcome to the guessing game" 
+"Think of a number from 1 to 100 and" 
+"the computer will guess your number" 
+"Would you like to play? y/n:" n
+
+"Good Bye." 
+NIL
+[5]> (guess-game)
+
+"Hello, welcome to the guessing game" 
+"Think of a number from 1 to 100 and" 
+"the computer will guess your number" 
+"Would you like to play? y/n:" y
+
+"Enter a number for the computer to guess:" 55
+
+"Give Commands to the computer or X to exit:" guess-small
+25
+
+"Give Commands to the computer or X to exit:" guess-big
+37
+
+"Give Commands to the computer or X to exit:" guess-big
+43
+
+"Give Commands to the computer or X to exit:" guess-big
+46
+
+"Give Commands to the computer or X to exit:" guess-big
+48
+
+"Give Commands to the computer or X to exit:" guess-big
+49
+
+"Give Commands to the computer or X to exit:" guess-big
+49
+
+"No solution has been found." 
+"Restarting game." 
+"Give Commands to the computer or X to exit:" guess-big
+75
+
+"Give Commands to the computer or X to exit:" guess-small
+62
+
+"Give Commands to the computer or X to exit:" guess-small
+56
+
+"Give Commands to the computer or X to exit:" guess-small
+53
+
+"Give Commands to the computer or X to exit:" guess-big
+54
+
+"Give Commands to the computer or X to exit:" guess-big
+55
+
+"The computer guess your number!" 
+"Would you like to play a new game?  y/n: " y
+
+"Enter a number for the computer to guess:" 67
+
+"Give Commands to the computer or X to exit:" "foo"
+The command is invalid.
+
+"Give Commands to the computer or X to exit:" 5
+The command is invalid.
+
+"Give Commands to the computer or X to exit:" guess-big
+75
+
+"Give Commands to the computer or X to exit:" guess-small
+62
+
+"Give Commands to the computer or X to exit:" guess-big
+68
+
+"Give Commands to the computer or X to exit:" guess-big
+71
+
+"Give Commands to the computer or X to exit:" guess-big
+73
+
+"Give Commands to the computer or X to exit:" guess-big
+74
+
+"Give Commands to the computer or X to exit:" guess-big
+74
+
+"No solution has been found." 
+"Restarting game." 
+"Give Commands to the computer or X to exit:" guess-big
+75
+
+"Give Commands to the computer or X to exit:" guess-small
+62
+
+"Give Commands to the computer or X to exit:" guess-big
+68
+
+"Give Commands to the computer or X to exit:" guess-small
+65
+
+"Give Commands to the computer or X to exit:" guess-big
+66
+
+"Give Commands to the computer or X to exit:" guess-big
+67
+
+"The computer guess your number!" 
+"Would you like to play a new game?  y/n: " n
+
+"Thank you for playing." 
+"Thank you for playing." 
+"Good Bye." 
+NIL
+[6]> (dribble)
+;; Dribble of #<IO TERMINAL-STREAM> finished on 2012-10-05 00:04:43.

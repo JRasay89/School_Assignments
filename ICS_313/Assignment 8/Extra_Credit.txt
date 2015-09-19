@@ -1,0 +1,94 @@
+Added languages and creators
+
+
+%10 new languages---------------------------------------------------------------
+programmingLanguage(erlang).
+languageType(erlang, functional).
+newLanguage(erlang).
+
+programmingLanguage(icon).
+languageType(icon, database).
+parent(snobol, icon).
+
+programmingLanguage(javaScript).
+languageType(javaScript, scripting).
+newLanguage(javaScript).
+
+programmingLanguage(linda).
+languageType(linda, ??).
+newLanguage(linda).
+
+programmingLanguage(logo).
+languageType(logo, functional).
+parent(lisp, logo).
+
+programmingLanguage(objectiveC).
+languageType(objectiveC, objectOriented).
+parent(c, objectiveC).
+
+programmingLanguage(occam).
+languageType(occam, concurrent).
+newLanguage(occam).
+
+programmingLanguage(postScript).
+languageType(postScript, scripting).
+newLanguage(postScript).
+
+programmingLanguage(sisal).
+languageType(sisal, functional).
+newLanguage(sisal).
+
+programmingLanguage(vbScript).
+languageType(vbScript, scripting).
+parent(visualBasic, vbScript).
+
+%Designers and full names-------------------------------------------------------
+designer(ada, ichbiah).    /*ada's designer is ichbiah*/
+designer(basic, kemeny).
+designer(c, ritchie).
+designer(cpp, stroustrup).
+designer(cSharp, hejlsberg).
+designer(caml, leroy).
+designer(cobol, hopper).
+designer(fortran, backus).
+designer(haskell, jones).
+designer(icon, griswold).
+designer(java, gosling).
+designer(javaScript, eich).
+designer(lisp, mccarthy).
+designer(ml, milner).
+designer(miranda, turner).
+designer(modula, wirth).
+designer(pascal, wirth).
+designer(perl, wall).
+designer(php, lerdorf).
+designer(python, rossum).
+designer(ruby, matsumoto).
+designer(sisal, mcgraw).
+designer(scheme, steele).
+designer(visualBasic, cooper).
+
+fullname(ichbiah, 'Jean Ichbiah'). /*ichbiah's fullname is Jean Ichbiah*/
+fullname(kemeny, 'John George Kemeny').
+fullname(ritchie, 'Dennis M. Ritchie').
+fullname(cpp, 'Bjarne Stroustrup').
+fullname(hejlsberg, 'Anders Hejlsberg').
+fullname(leroy, 'Xavier Leroy').
+fullname(hopper, 'Grace Hopper').
+fullname(backus, 'John Backus').
+fullname(jones, 'Simon Peyton Jones').
+fullname(griswold, 'Ralph Griswold').
+fullname(gosling, 'James Gosling').
+fullname(eich, 'Brendan Eich').
+fullname(mccarthy, 'John McCarthy').
+fullname(milner, 'Robin Milner').
+fullname(turner, 'David Turner').
+fullname(wirth, 'Niklaus Wirth').
+fullname(wirth, 'Niklaus Wirth').
+fullname(wall, 'Larry Wall').
+fullname(lerdorf, 'Rasmus Lerdorf').
+fullname(rossum, 'Guido Van Russum').
+fullname(matsumoto, 'Yukihiro Matsumoto').
+fullname(mcgraw, 'James McGraw').
+fullname(steele, 'Guy L. Steele Jr.').
+fullname(cooper, 'Alan Cooper').

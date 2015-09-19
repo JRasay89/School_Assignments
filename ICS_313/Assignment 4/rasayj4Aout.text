@@ -1,0 +1,104 @@
+				
+				Questions:
+Can you break it? What tests will you run to find out? 
+Yes, if you type in more than one allowed command it will crash, such as the command look twice it will crash.
+
+				Comments
+This output test the new game-repl function
+It goes through all the different areas and picks up all of the new items for the multi-part objects
+
+
+
+
+* (load "rasayj4A.lisp")
+
+
+
+T
+
+* (id 313 4)
+Name: JOHN RASAY
+
+Course: ICS313
+
+Assignment # 4
+
+NIL
+
+* (game-repl)
+
+look
+
+You are in the living-room. A wizard is snoring loudly on the couch. There is
+ 
+a door going west from here. There is a ladder going upstairs from here. There
+ 
+is a door going east from here. You see a whiskey on the floor. You see a
+ 
+bucket on the floor. You see a elastic_rubber_band on the floor.
+
+pickup elastic_rubber_band
+
+You are now carrying the elastic_rubber_band
+
+walk upstairs
+
+You are in the attic. There is a giant welding torch in the corner. There is a
+ 
+ladder going downstairs from here. You see a rock on the floor.
+
+pickup rock
+
+You are now carrying the rock
+
+walk downstairs
+
+You are in the living-room. A wizard is snoring loudly on the couch. There is
+ 
+a door going west from here. There is a ladder going upstairs from here. There
+
+is a door going east from here. You see a whiskey on the floor. You see a
+ 
+bucket on the floor.
+
+walk west
+
+You are in a beautiful garden. There is a well in front of you. There is a
+
+door going east from here. You see a frog on the floor. You see a chain on the
+ 
+floor. You see a wood on the floor.
+
+pickup wood
+
+You are now carrying the wood
+
+walk east
+You are in the living-room. A wizard is snoring loudly on the couch. There is
+ 
+a door going west from here. There is a ladder going upstairs from here. There
+ 
+is a door going east from here. You see a whiskey on the floor. You see a
+ 
+bucket on the floor.
+
+walk east
+
+You are in the kitchen. There is an ogre cooking dinner. There is a door going
+ 
+west from here. You see a knife on the floor. You see a candy_wrapper on the
+
+floor.
+
+pickup candy_wrapper
+
+You are now carrying the candy_wrapper
+
+inventory
+Items- elastic_rubber_band wood candy_wrapper rock
+
+quit
+
+NIL
+
+* (dribble)

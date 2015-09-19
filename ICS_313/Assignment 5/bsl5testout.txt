@@ -1,0 +1,87 @@
+International Allegro CL Enterprise Edition
+6.0 [Solaris] (Sep 8, 2004 10:49)
+Copyright (C) 1985-2000, Franz Inc., Berkeley, CA, USA.  All Rights Reserved.
+
+This copy of Allegro CL is licensed to:
+   David Chin, University of Hawaii
+
+;; Optimization settings: safety 1, space 1, speed 1, debug 2.
+;; For a complete description of all compiler switches given the
+;; current optimization settings evaluate (EXPLAIN-COMPILER-SETTINGS).
+CL-USER(1): (load "bsl5")
+; Loading /home04/19/bsl/ics313/assignment5/bsl5.lisp
+T
+CL-USER(2): (game-repl)
+>walk west
+
+You are in a beautiful garden. There is a well in front of you. There
+ is a door going east from here. You see a frog on the floor. You see a
+ chain on the floor. You see a herbs on the floor.
+>pickup herbs
+
+You are now carrying the herbs
+>walk east
+
+You are in the living-room. A wizard is snoring loudly on the couch.
+ there is a door going west from here. There is a ladder going upstairs
+ from here. There is a doorway going east from here. You see a whiskey
+ on the floor. You see a bucket on the floor. You see a wand on the
+ floor.
+>pickup wand
+
+You are now carrying the wand
+>walk east
+
+You are in a hallway with pictures all over the wall. They appear to
+ be of the wizard and various other people. There is a doorway going
+ west from here. There is a doorway going south from here.
+>walk south
+
+You are in the kitchen. You see the wizard 's cauldron cooking on the
+ stove. There is a doorway going north from here. You see a knife on
+ the floor. You see a vial on the floor.
+>pickup knife
+
+You are now carrying the knife
+>pickup vial
+
+You are now carrying the vial
+>cook herbs cauldron
+
+You put the herbs in the cauldron
+>stir wand cauldron
+
+You mix the cauldron with the wand and see the potion turn silver
+>take-potion vial cauldron
+
+You fill the vial with the potion
+>walk north
+
+You are in a hallway with pictures all over the wall. They appear to
+ be of the wizard and various other people. There is a doorway going
+ west from here. There is a doorway going south from here.
+>walk west
+
+You are in the living-room. A wizard is snoring loudly on the couch.
+ there is a door going west from here. There is a ladder going upstairs
+ from here. There is a doorway going east from here. You see a whiskey
+ on the floor. You see a bucket on the floor.
+>walk upstairs
+
+You are in the attic. There is a giant welding torch in the corner.
+ there is an open spellbook on a pedestal. There is a ladder going
+ downstairs from here.
+>say-spell vial spellbook
+
+The potion turns gold and emits a faint light
+>pour vial knife
+
+Theres a bright flash of light and you find a large gold and silver
+ sword in your hands. Now you can accomplish what you came here for -
+ killing the wizard and stealing his powers. You win.
+>quit
+
+NIL
+CL-USER(3): '(i won)
+(I WON)
+CL-USER(4): 

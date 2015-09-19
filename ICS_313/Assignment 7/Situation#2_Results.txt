@@ -1,0 +1,270 @@
+1 ?- go2.
+
+The order of balls from left to right is: 
+A is black
+B is black
+C is black
+D is white
+E is black
+F is black
+true ;
+
+The order of balls from left to right is: 
+A is black
+B is black
+C is black
+D is white
+E is black
+F is black
+true ;
+
+The order of balls from left to right is: 
+A is black
+B is black
+C is black
+D is white
+E is black
+F is black
+true ;
+
+The order of balls from left to right is: 
+A is black
+B is black
+C is black
+D is white
+E is black
+F is black
+true ;
+
+The order of balls from left to right is: 
+A is black
+B is black
+C is black
+D is white
+E is black
+F is black
+true ;
+
+The order of balls from left to right is: 
+A is black
+B is black
+C is black
+D is white
+E is black
+F is black
+true ;
+
+The order of balls from left to right is: 
+A is black
+B is black
+C is white
+D is black
+E is black
+F is black
+true ;
+
+The order of balls from left to right is: 
+A is black
+B is black
+C is white
+D is black
+E is black
+F is black
+true ;
+
+The order of balls from left to right is: 
+A is black
+B is black
+C is white
+D is black
+E is black
+F is black
+true ;
+
+The order of balls from left to right is: 
+A is black
+B is black
+C is white
+D is black
+E is black
+F is black
+true ;
+
+The order of balls from left to right is: 
+A is black
+B is black
+C is white
+D is black
+E is black
+F is black
+true ;
+
+The order of balls from left to right is: 
+A is black
+B is black
+C is white
+D is black
+E is black
+F is black
+true ;
+
+The order of balls from left to right is: 
+A is black
+B is black
+C is black
+D is white
+E is black
+F is black
+true ;
+
+The order of balls from left to right is: 
+A is black
+B is black
+C is black
+D is white
+E is black
+F is black
+true ;
+
+The order of balls from left to right is: 
+A is black
+B is black
+C is black
+D is white
+E is black
+F is black
+true ;
+
+The order of balls from left to right is: 
+A is black
+B is black
+C is black
+D is white
+E is black
+F is black
+true ;
+
+The order of balls from left to right is: 
+A is black
+B is black
+C is black
+D is white
+E is black
+F is black
+true ;
+
+The order of balls from left to right is: 
+A is black
+B is black
+C is black
+D is white
+E is black
+F is black
+true ;
+
+The order of balls from left to right is: 
+A is black
+B is black
+C is white
+D is black
+E is black
+F is black
+true ;
+
+The order of balls from left to right is: 
+A is black
+B is black
+C is white
+D is black
+E is black
+F is black
+true
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+. There are 240 solutions
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+The order of balls from left to right is: 
+A is black
+B is black
+C is black
+D is white
+E is black
+F is black
+true ;
+
+The order of balls from left to right is: 
+A is black
+B is black
+C is white
+D is black
+E is black
+F is black
+true ;
+
+The order of balls from left to right is: 
+A is black
+B is black
+C is white
+D is black
+E is black
+F is black
+true ;
+
+The order of balls from left to right is: 
+A is black
+B is black
+C is white
+D is black
+E is black
+F is black
+true ;
+
+The order of balls from left to right is: 
+A is black
+B is black
+C is white
+D is black
+E is black
+F is black
+true ;
+
+The order of balls from left to right is: 
+A is black
+B is black
+C is white
+D is black
+E is black
+F is black
+true ;
+
+The order of balls from left to right is: 
+A is black
+B is black
+C is white
+D is black
+E is black
+F is black
+true ;
+false.
+
+2 ?-

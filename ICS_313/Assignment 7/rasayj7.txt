@@ -1,0 +1,72 @@
+2.(25 pt) Calculate how many solutions there are to the above problems mathematically, if:
+ 	1.balls with the same color are indistinguishable,or
+        2.all balls are distinct.
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+Situation#1
+1.-Indistinguishable
+If the balls with the same color are indistinguishable
+there are:
+ 
+3*2 = 6 solutions. 
+
+You have 2 choices of choosing which will appear
+first which is blue or green. Then there are three ways of moving the
+yellow around, which is after the blue and yellow balls or between
+the pairs or before them.
+
+2.Distinct
+If the balls with the same color are distinc then there are:
+
+2*3*2*2 = 24 solutions.
+
+There are 2 ways of choosing which goes first blue or green. 3 ways of 
+to place the yellow ball. 2 ways of choosing which of the green ball
+goes first. Then 2 ways of choosing which of the blue ball goes first.
+
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+Situation#2
+1.Indistinguishable
+If the balls with the same color are indistinguishable there are:
+
+2*1 = 2 solutions.
+
+Since there are just two colors white and black, there is 2 ways of
+placing the white ball which is before three consecutive black colored balls
+or after. Then there is only black to choose from in placing first.
+
+2.Distinct
+If the balls with the same color are distinct then there are:
+
+5*4*3*2*1*2 = 240 solutions.
+(5!)*2
+
+There are 5! ways of arranging the black colored ball and there are 2 ways of arranging the
+white colored ball.
+
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+Situation#3
+1.Indistinguishable
+If the balls with the same color are indistinguishable there are:
+
+3!/2! = 3 solutions.
+
+Since the only thing your are moving are the black and white balls, then there are 3 of them
+2 white and 1 black and
+Total number of elements: 3!
+White = 2!
+Black = 1!
+
+
+2.Distinct
+If the balls with the same color are distinct there are:
+
+3!*2!*3! = 72 solutions.
+
+There 3! ways of choosing 3 green balls to go first, 2! ways of choosing 2 red balls to go first, and there
+are 3! ways for arranging the black and white balls.
+
+

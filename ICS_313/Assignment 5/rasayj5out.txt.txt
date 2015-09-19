@@ -1,0 +1,53 @@
+;; Dribble of #<IO TERMINAL-STREAM> started on 2012-10-24 20:26:11.
+#<OUTPUT BUFFERED FILE-STREAM CHARACTER #P"out.txt">
+[2]> (load "rasayj5.lisp")
+;; Loading file rasayj5.lisp ...
+;; Loaded file rasayj5.lisp
+T
+[3]> (game-repl)
+
+:Type help, h, or ? for help:
+>
+h
+
+:The following commands are available:
+
+look                    Describes your loaction.
+walk-value              Walk to a new location.
+pickup-value    	Pickup an item in your current loaction.
+inventory               Open up your inventory.
+quit                    Quit the game.
+
+
+:Type help, h, or ? for help:
+>
+help
+
+:The following commands are available:
+
+look                    Describes your loaction.
+walk-value              Walk to a new location.
+pickup-value    	Pickup an item in your current loaction.
+inventory               Open up your inventory.
+quit                    Quit the game.
+
+
+:Type help, h, or ? for help:
+>
+?
+
+:The following commands are available:
+
+look                    Describes your loaction.
+walk-value              Walk to a new location.
+pickup-value    	Pickup an item in your current loaction.
+inventory               Open up your inventory.
+quit                    Quit the game.
+
+
+:Type help, h, or ? for help:
+>
+quit
+NIL
+[4]> (dribble)
+;; Dribble of #<IO TERMINAL-STREAM> finished on 2012-10-24 20:26:52.

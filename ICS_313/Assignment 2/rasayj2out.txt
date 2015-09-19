@@ -1,0 +1,120 @@
+
+* (load "rasayj2.lisp")
+
+
+
+T
+* (id 313 2)
+
+Name: "JOHN RASAY
+"
+Course: ICS313
+
+Assignment # 2 
+
+NIL
+
+* (my-finder 8 '(8))
+
+
+
+8
+
+* (my-finder 8 "foo")
+
+Error in MY-FINDER function. The second parameter must be a list, but was "foo"
+
+NIL
+
+* (my-finder 9 '(1 2 3 5 7 9))
+
+
+
+9
+
+* (my-finder 'bar (list "dog" 'fie 'fum 'bar))
+
+
+
+BAR
+
+* (eat-last '(8 9 10 3))
+
+
+
+(8 9 10)
+
+* (eat-last '(1))
+
+
+
+NIL
+
+* (eat-last "foo")
+
+Error in EAT-LAST function. The parameter must be a list, but was "foo"
+
+NIL
+
+* (eat-last (list "bar" "foo" 'fie "fum"))
+
+
+
+("bar" "foo" FIE)
+
+* (symbols-only '(1 "two" (list 3 4)))
+
+
+
+NIL
+
+* (symbols-only (list 'foo 'bar ()))
+
+
+
+(FOO BAR NIL)
+
+
+* (symbols-only (list 1 "foo" 'fie 'fo "fum" 99))
+
+
+
+(FIE FO)
+
+* (symbols-only '(1 'two (list 3 10)))
+
+
+
+NIL
+
+* (symbols-only (list 'foo 'dog 1 3))
+
+
+
+(FOO DOG)
+
+* (matchp 9 "9")
+
+No Match
+
+NIL
+
+* (matchp '(foo bar) (list 'foo 'bar))
+
+
+
+(FOO BAR)
+
+* (matchp (list 313 "assignment" 2) '(313 "assignment" 2))
+
+
+
+(313 "assignment" 2)
+
+* (matchp (list 313 "assignment" 2 ()) '(313 "assignment" 2 ()))
+
+
+
+(313 "assignment" 2 NIL)
+
+* (dribble)

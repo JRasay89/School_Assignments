@@ -1,0 +1,110 @@
+
+How many guesses are needed to find each number in your assignment?
+-it took 6 guesses to find 1
+-it took 6 guesses to find 44
+-it took 3 guesses to find 88
+
+
+* (load "rasayj1.lisp")
+
+
+
+T
+
+* *ID*
+
+
+
+"John Rasay"
+
+* (guess-my-number)
+
+
+
+50
+
+* (smaller)
+
+
+
+25
+
+* (smaller)
+
+
+
+12
+
+* (smaller)
+
+
+
+6
+
+* (smaller)
+
+
+
+3
+
+* (smaller)
+
+
+
+1
+
+* (start-over)
+
+
+
+50
+
+* (smaller)
+
+
+
+25
+
+* (bigger)
+
+
+
+37
+
+* (bigger)
+
+
+
+43
+
+* (bigger)
+
+
+
+46
+
+* (smaller)
+
+
+
+44
+
+* (start-over)
+
+
+
+50
+
+* (bigger)
+
+
+
+75
+
+* (bigger)
+
+
+
+88
+
+* (driblle)
