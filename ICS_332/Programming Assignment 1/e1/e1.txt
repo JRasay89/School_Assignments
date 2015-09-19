@@ -1,0 +1,21 @@
+Exercise 1:
+With this exercise i use the command
+
+strace -xfc -otracefile_java java Noop
+and
+strace -xfc -otracefile_c ./Noop
+
+I added the option -c to get the number of calls and how many times they were called 
+
+Questions:
+1. Noop.java = 7351 Total System calls
+   Noop.c = 24 Total System calls
+
+2. Noop.java = 45 Unique System Calls
+   Noop.c = 11 Unique System calls
+
+3. 
+These systems calls were used by the java program:
+   clone - I think this call just creates a child process
+   gettimeofday - I think this call just gets the timezone
+   openat - and this call just opens some directory

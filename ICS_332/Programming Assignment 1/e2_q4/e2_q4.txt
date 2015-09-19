@@ -1,0 +1,30 @@
+Question #4
+---------------------------------------------------------------------
+Command-line used:
+
+This is the commands that I used. I wasn't able to learn how to get everything in 1 big command so I had to do each of
+them seperately.
+
+-I first use this command to open banshee and output the system call open() to a file.
+strace -xf -e trace=open -otracefile_banshee banshee
+
+-Then from the output file I used grep to remove the lines with (No such file or directory) which
+ I think are the failed attempts and save it to different ouput.
+grep -v '(No such file or directory)' tracefile_banshee >> output1.txt
+
+-Then from that outputfile I used grep again to only get the lines with lib and save it to another outputfile.
+grep 'lib' output1.txt >> output2.txt
+
+-Then from that outputfile I used grep to only get the lines with .so. and save it to another outputfile
+grep '.so.' output2.txt >> output3.txt
+
+-I then sorted the last output file and remove the duplicates and save it to a different outputfile.
+sort output3.txt | uniq >> output4.txt
+
+-Then I used this command to read the number of lines to get the number of shared libraries used from output4.
+sed -n '$=' output4.txt
+
+
+Number of Shared Libraries:
+118
+---------------------------------------------------------------------

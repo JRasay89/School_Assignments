@@ -1,0 +1,119 @@
+Exercise 1:
+1. Noop.java = 7351 System calls
+   Noop.c = 24 Total System calls
+
+2. Noop.java = 45 System Calls
+   Noop.c = 11 System calls
+
+3. clone - creates a child process
+   gettimeofday - gets the timezone
+   openat - opens a directory
+
+
+Exercise 2:
+
+Question #1
+-------------------------------------------------------
+On the command-lione i use the command
+
+strace -xf -e trace=read -otracefile_cp cp example ~/Downloads/ex
+
+Output:
+2868  write(4, "hello\n\n", 7)          = 7
+
+looking at the man page for write, the third argument is the buffer size
+-------------------------------------------------------
+
+
+
+
+Question #2
+-------------------------------------------------------
+On the command-line i use the command
+
+strace -xf -otracefile_rm rm example
+
+from the output i look at:
+2745 unlinkat(AT_FDCWD, "example", 0)  = 0
+
+The system call is called:
+unlinkat
+-------------------------------------------------------
+
+
+
+
+Question #3
+-------------------------------------------------------
+On the command-line I use the command
+
+strace -e trace=open -otracefile_ls ls
+-With this command it prints out whatever is being open including the shared libraries.
+
+Shared Libraries:
+open("/lib/i386-linux-gnu/libselinux.so.1", O_RDONLY|O_CLOEXEC) = 3
+open("/lib/i386-linux-gnu/librt.so.1", O_RDONLY|O_CLOEXEC) = 3
+open("/lib/i386-linux-gnu/libacl.so.1", O_RDONLY|O_CLOEXEC) = 3
+open("/lib/i386-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+open("/lib/i386-linux-gnu/libdl.so.2", O_RDONLY|O_CLOEXEC) = 3
+open("/lib/i386-linux-gnu/libpthread.so.0", O_RDONLY|O_CLOEXEC) = 3
+open("/lib/i386-linux-gnu/libattr.so.1", O_RDONLY|O_CLOEXEC) = 3
+
+-------------------------------------------------------
+
+
+Question #4
+-------------------------------------------------------
+
+Command-line used:
+
+strace -xf -e trace=open -otracefile_banshee banshee
+grep -v '(No such' tracefile_banshee >> output1.txt
+grep 'lib' output1.txt >> output2.txt
+grep '.so.' output2.txt >> output3.txt
+sort output3.txt | uniq >> output4.txt
+sed -n '$=' output4.txt
+
+Number of shared libraries: 118
+
+-------------------------------------------------------
+
+
+
+
+
+
+
+2.I used strace -xfc -otracefile rm noop.class for my command line. 
+I do not have an strace output persay becuase i used that summarizing option. 
+From there I googled all the man pages of the system calls that was used. I found 
+too that fit the bill of what I am looking for. They are munmap and unlinkat because 
+munmap deletes the mappaings for a specified address range and unlinkat deletes a file name for the file system.
+
+
+
+3. I used strace -xf -e trace=open ls for my command line. I first ran strace -xf ls becuase I wanted to see everything 
+first. Then I noticed that all the open calls had lib in it. So I figured that that is what I should search for. 
+That is when i used the strace i mentioned at the beginning to filter out what i need. I am not to sure how to read it though 
+because one line looks like this:
+
+open("/home/db2inst1/sqllib/lib32/tls/i686/sse2/librt.so.1", O_RDONLY) = -1 ENOENT (No such file or directory)
+I dont know which lib is the correct one so I will just list everthing that has lib in it.
+List:
+sqllib
+lib32
+librt.so.1
+libselinux.so.1
+libacl.so.1
+libc.so.6
+libpthread.so.0
+libdl.so.2
+libattr.so.1
+
+
+
+
+
+
+
+

@@ -1,0 +1,62 @@
+DISK CONTENT:
+RANDOM TRANSACTIONS:
+Read transaction for logical address: 1100
+RAM read: 1100 --> 0
+Write transaction for logical address: 1110
+RAM write: 1110 <-- -56
+Read transaction for logical address: 0101
+RAM read: 0101 --> 0
+Write transaction for logical address: 1011
+RAM write: 1011 <-- 119
+Read transaction for logical address: 0010
+RAM read: 0010 --> 0
+Write transaction for logical address: 0001
+RAM write: 0001 <-- -17
+Read transaction for logical address: 1110
+RAM read: 1110 --> -56
+Write transaction for logical address: 0000
+RAM write: 0000 <-- -65
+Read transaction for logical address: 1000
+RAM read: 1000 --> 0
+Write transaction for logical address: 1111
+RAM write: 1111 <-- -59
+Read transaction for logical address: 1101
+RAM read: 1101 --> 0
+Write transaction for logical address: 0001
+RAM write: 0001 <-- 113
+Read transaction for logical address: 1001
+RAM read: 1001 --> 0
+Write transaction for logical address: 1100
+RAM write: 1100 <-- -27
+Read transaction for logical address: 1001
+RAM read: 1001 --> 0
+Write transaction for logical address: 0111
+RAM write: 0111 <-- -75
+Read transaction for logical address: 1011
+RAM read: 1011 --> 119
+Write transaction for logical address: 1110
+RAM write: 1110 <-- -34
+Read transaction for logical address: 1001
+RAM read: 1001 --> 0
+Write transaction for logical address: 1111
+RAM write: 1111 <-- -34
+MEMORY CONTENT:
+0000: -65
+0001: 113
+0010: 0
+0011: 0
+0100: 0
+0101: 0
+0110: 0
+0111: -75
+1000: 0
+1001: 0
+1010: 0
+1011: 119
+1100: -27
+1101: 0
+1110: -34
+1111: -34
+DISK CONTENT:
+NUM PAGE FAULTS: 0
+NUM BYTES TRANSFERRED: 0

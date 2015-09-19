@@ -1,0 +1,17 @@
+Exercise 2:
+
+Question #1
+---------------------------------------------------------------------------------------------
+On the command-lione i use the command
+
+strace -xf -e trace=read -otracefile_cp cp example ~/Downloads/ex
+
+I filtered the output to only get the system call read
+
+Output:
+This is the output that i look at
+2209  read(3, "hello\n\n", 32768)       = 7
+
+looking at the man page for read,I think the third argument is the the number of bytes to be put
+into the buffer, so I think the buffer size used is 32768kb.
+---------------------------------------------------------------------------------------------

@@ -1,0 +1,15 @@
+Why is the 1st arrived process treated better in the Preemptive algorithm?
+
+	-The first arrived process is treated better in the Preemptive because it 
+ arrived first and so it 
+         preempts all other process whenever its ready.
+
+
+
+
+
+
+When can the 2nd arrived process run in the Non-Preemptive case?
+
+	-In a Non-Preemptive case the 2nd arrived process runs after the first arrived process 
+ finish its cpu burst.

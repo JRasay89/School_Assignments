@@ -1,0 +1,3 @@
+It is not a good scheduling algorithm because the process that arrives first will always be the 
+one that runs,
+and the process's that arrive after will never run.

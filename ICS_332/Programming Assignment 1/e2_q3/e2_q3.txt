@@ -1,0 +1,29 @@
+Question #3
+-------------------------------------------------------
+On the command-line I use the command
+
+strace -xf -e trace=open -otracefile_ls ls
+
+I used this command to print out an output of the libraries being opened.
+There was not that many calls to look at from the output so it was easy to 
+read and get the shared libraries from the ouput.
+
+This is the ouput that I look at
+open("/lib/i386-linux-gnu/libselinux.so.1", O_RDONLY|O_CLOEXEC) = 3
+open("/lib/i386-linux-gnu/librt.so.1", O_RDONLY|O_CLOEXEC) = 3
+open("/lib/i386-linux-gnu/libacl.so.1", O_RDONLY|O_CLOEXEC) = 3
+open("/lib/i386-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+open("/lib/i386-linux-gnu/libdl.so.2", O_RDONLY|O_CLOEXEC) = 3
+open("/lib/i386-linux-gnu/libpthread.so.0", O_RDONLY|O_CLOEXEC) = 3
+open("/lib/i386-linux-gnu/libattr.so.1", O_RDONLY|O_CLOEXEC) = 3
+
+Shared Libraries:
+libselinux.so.1
+librt.so.1
+libacl.so.1
+libc.so.6
+libdl.so.2
+libpthread.so.0
+libattr.so.1
+
+-------------------------------------------------------

@@ -1,0 +1,17 @@
+Question #2
+-------------------------------------------------------
+On the command-line i use the command
+
+strace -xf -otracefile_rm rm example
+
+output:
+from the output i look at the line
+
+2745 unlinkat(AT_FDCWD, "example", 0)  = 0
+
+After reading the man page for unlinkat it says it removes a directory entry relative to a directory file descriptor
+so I think this is the system call used to remove files in Linux.
+
+The system call is called:
+unlinkat
+-------------------------------------------------------
