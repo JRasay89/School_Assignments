@@ -1,0 +1,22 @@
+CREATE TABLE Players(Pname CHAR(20))
+CREATE TABLE Teams(Tname CHAR(20))
+CREATE TABLE Fans(Fname CHAR(20))
+CREATE TABLE Colors(Cname CHAR(20))
+CREATE TABLE Plays_for(Pname CHAR(20), Tname CHAR(20), Captain CHAR(3),
+	 PRIMARY KEY (Pname),
+	 FOREIGN KEY (Pname) REFERENCES Players,
+	 FOREIGN KEY (Tname) REFERENCES Teams)
+CREATE TABLE Color_Use(Tname CHAR(20), Cname Char(20),
+	 PRIMARY KEY (Tname)
+	 FOREIGN KEY (Tname) REFERENCES Teams,
+	 FOREIGN KEY (Cname) REFERENCES Colors)
+CREATE TABLE Favorite_Color(Fname CHAR(20), Cname CHAR(20),
+	 PRIMARY KEY (Fname),
+	 FOREIGN KEY (Fname) REFERENCES Fans,
+	 FOREIGN KEY (Cname) REFERENCES Colors)
+CREATE TABLE Fan_of(Fname CHAR(20), Pname CHAR(20), Tname CHAR(20),
+	 Primary KEY (Fname),
+	 FOREIGN KEY (Fname) REFERENCES Fans,
+	 FOREIGN KEY (Pname) REFERENCES Players,
+	 FOREIGN KEY (Tname) REFERENCES Teams)
+

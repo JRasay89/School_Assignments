@@ -1,0 +1,5 @@
+load orders.tbl
+eq 3 F
+gtr 4 20000
+eq 3 John
+gtr 2 13

@@ -1,0 +1,36 @@
+CREATE TABLE Players
+	(Pname CHAR(20))
+CREATE TABLE Teams
+	(Tname CHAR(20))
+CREATE TABLE Fans
+	(Fname CHAR(20))
+CREATE TABLE Colors
+	(Cname CHAR(20))
+CREATE TABLE Plays_for
+	(Pname CHAR(20),
+	 Tname CHAR(20),
+	 Captain BOOLEAN,
+	 PRIMARY KEY (Pname),
+	 FOREIGN KEY (Pname) REFERENCES Players,
+	 FOREIGN KEY (Tname) REFERENCES Teams)
+CREATE TABLE Color_Use
+	(Tname CHAR(20),
+	 Cname Char(20),
+	 PRIMARY KEY (Tname)
+	 FOREIGN KEY (Tname) REFERENCES Teams,
+	 FOREIGN KEY (Cname) REFERENCES Colors)
+CREATE TABLE Favorite_Color
+	(Fname CHAR(20),
+	 Cname CHAR(20),
+	 PRIMARY KEY (F.name),
+	 FOREIGN KEY (F.name) REFERENCES Fans
+	 FOREIGN KEY (C.name) REFERENCES Colors)
+CREATE TABLE Fan_of
+	(Fname CHAR(20),
+	 Pname CHAR(20),
+	 Tname CHAR(20),
+	 Primary KEY (F.name),
+	 FOREIGN KEY (F.name) REFERENCES Fans,
+	 FOREIGN KEY (P.name) REFERENCES Players,
+	 FOREIGN KEY (T.name) REFERENCES Teams)
+
